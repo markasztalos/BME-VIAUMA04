@@ -47,11 +47,15 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
         * Architektúra: controllerek, rétegek 
         * REST API
         * Routing
+1. [Angular bevezető](4/ea4.md)
+    * Alapvető angular alkalmazás felépítése 
+        * Modulok
+        * Komponensek
+        * Szolgáltatások
+    * `@angular/cli` (`ng`)
+    * HTML sablonok
+    * Routing
+    * Dependency injection
+    * `HttpClient`
         
         
-
-
-
-
-
-
