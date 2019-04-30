@@ -27,9 +27,6 @@ Primitív típusok vs. objektumok
 console.log("alma".length);
 ```
 
-???
-asdasdas
-
 ---
 
 # Függvények

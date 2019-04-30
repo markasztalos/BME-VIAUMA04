@@ -19,8 +19,34 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
     * Változók
     * Adattípusok
     * Függvények, konstruktorfüggvények
-    * Prototípus alapú működés
-1. [TypeScript](3/ea3.md)
+1. [Haladó JavaScript és TypeScript](3/ea3.md)
+    * Függvények és a `this` kulcsszó, lamdba kifejezések
+    * Prototípus alapú működés, a `class` kulcsszó
+    * NodeJS és ExpressJS keretrendszerek.  
+        Express JS mintapélda a `3/code/express-js` könytárban található. Futtatásához [`nodejs`-t kell telepíteni](https://nodejs.org/en/), majd:
+            
+        ```console
+        $ npm install
+        $ node index.js
+        ```
+    *  [TypeScript](https://www.typescriptlang.org/):
+        * típusannotációk
+        * interfészek, típusok
+        * fordítási folyamat
+        * generikus típusok
+        * típusok kombinálása
+        * modulok, névterek, projektkezelés (`tsconfig.json`)
+        * TypeScript projekt + Expres JS + web api példa: `3/code/express-ts` könyvtár:
+        
+            ```console
+            $ npm install
+            $ tsc
+            $ node build/app.js
+            ```
+        
+        
+
+
 
 
 

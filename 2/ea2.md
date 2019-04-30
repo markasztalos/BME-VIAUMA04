@@ -1,5 +1,7 @@
 # JavaScript
 
+*Vázlat, további átnézést igényel.*
+
 A JavaScript a web programozási nyelve, nevén és szintaktikai hasonlóságán kívül semmi köze a Java programozási nyelvhez. Eredeti funkciójat, hogy egyszerű szkriptekkel minél "élőbbé" tegye a statikus weboldalakat, azonban a folyamatos fejlesztés eredményeképpen ma egy önálló, általános, a böngészőktől független programozási nyelvként tekinthető. 
 
 ## Motorok

@@ -1,5 +1,7 @@
 # Multiplatform fejlesztés Javascript alapon
 
+*Vázlat, további átnézést igényel.*
+
 ## Bevezetés
 
 Az Interneten a web működését olyan alapvető technológiák és szabványok teszik lehetővé, mint a HTML (Hypertext Markup Language), a CSS (Cascading Style Sheets), a HTTP (HyperText Transfer Langauge) illetve a JavaScript. 
