@@ -13,13 +13,14 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
     * CSS
     * JavaScript, JSON, AJAX
     * HTTP
-2. [JavaScript alapok](2/ea2.md):
+1. [JavaScript alapok](2/ea2.md):
     * JavaScript motorok
     * Modulkezelés
     * Változók
     * Adattípusok
     * Függvények, konstruktorfüggvények
     * Prototípus alapú működés
+1. [TypeScript](3/ea3.md)
 
 
 
