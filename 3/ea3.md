@@ -1170,17 +1170,25 @@ export function configureRouting(app: express.Application,
 
 ---
 # Bootstrapper
-
-`main.ts`
 ```ts
+//`main.ts`
 import express from 'express';
 import { LibraryDB } from './models/library-db';
 import { BooksController } from './controllers/books.controller';
 import { IBook } from './models/models';
 import { configureRouting } from './app.routing';
+```
+---
 
-// Create a new express application instance
+# Bootstrapper
+```ts
+//`main.ts`
 const app: express.Application = express();
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 const db = new LibraryDB();
 db.reloadDB();
 const booksController = new BooksController(db);

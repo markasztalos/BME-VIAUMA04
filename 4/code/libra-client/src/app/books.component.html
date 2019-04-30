@@ -1,0 +1,5 @@
+<ul *ngIf="books">
+  <li *ngFor="let book of books">
+    {{book.title}} (ISBN: {{book.isbn}})
+  </li>
+</ul>
