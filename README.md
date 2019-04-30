@@ -30,8 +30,8 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
         $ node index.js
         ```
     *  [TypeScript](https://www.typescriptlang.org/):
-        * típusannotációk
-        * interfészek, típusok
+        * Típusannotációk, 
+        * Interfészek, típusok
         * fordítási folyamat
         * generikus típusok
         * típusok kombinálása
@@ -43,6 +43,10 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
             $ tsc
             $ node build/app.js
             ```
+    * `libra-server` példa: `3/code/libra-server` könyvtár: 
+        * Architektúra: controllerek, rétegek 
+        * REST API
+        * Routing
         
         
 
