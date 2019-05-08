@@ -15,6 +15,6 @@ export class BooksComponent implements OnInit {
     this.apiSvc.getBooks().subscribe(result => this.books = result);
   }
 
-  books: IBook[]
+  books: IBook[];
 
 }

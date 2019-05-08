@@ -141,6 +141,34 @@ export class LibraApiService {
 ```
 
 ---
+# Observable
+
+* Reaktív programozás: aszinkron programozási paradigma (`RxJS`)
+* Observable: típusos stream 
+  * 1 &rarr; 2 &rarr; 4 &rarr; 6 ... (`Observable<number>`)
+  * Aszinkron módon érkeznek az új értékek
+* Hány eleme lesz? 
+* Használat: 
+
+```ts
+let a: Observable<number>
+a.subscribe(value => {
+  console.log(value);
+});
+```
+
+---
+# Observable 2
+Manuális leiratkozás
+
+```ts
+let subscription = a.subscribe(...);
+subscription.unsubscribe();
+```
+
+*complete* esemény: observable vége &rarr; automatikus leíratkozás
+
+---
 # Könyvek komponens
 
 ```console
@@ -148,7 +176,9 @@ $ ng g c --help
 $ ng g c books --flat --skip-tests -m app
 ```
 &rarr; `books.component.ts`
+
 &rarr; `books.component.scss`
+
 &rarr; `books.component.html`
 
 ```ts
@@ -200,16 +230,31 @@ export class BooksComponent implements OnInit {
 ```
 
 ---
+# Könyvek komponens 4
+
+* Kezdetben a `books` tagváltozó értéke `undefined`
+* `ngOnInit`-ben aszinkron hívás &rarr; egyszer később megváltozik egy valós listára
+* Komponens osztály és HTML sablon összekötése
+* *angular change detection*
+  * Változásértesítés
+  * Mit néz? 
+  * Mikor fut le? 
+
+---
 # Komponensek összefoglaló
  
- * selector (pl. `libra-books`)
- * komponens osztály
-    * tagváltozók, metódusok
- * angular sablon (html)
- * sablon és komponens osztály összekötése
+ * *Selector* (pl. `libra-books`)
+    * Bent marad a végső HTML-ben &rarr; mihez kezd vele a böngésző?
+ * Komponens osztály (`@Component(...)`)
+    * tagváltozók
+    * metódusok
+    * Angular életciklus hook-ok (pl. `ngOnInit`)
+ * Angular HTML sablon
     * `*ngIf`, `*ngFor`
     * `{{}}`
+    * Speciális jelentéssel bíró tagek (pl. `ng-container`)
     * események később
+ * Sablon és komponens osztály összekötése
 
 ---
 # Dependency Injection (függőség injektálás)
@@ -238,11 +283,8 @@ import { LibraApiService } from './libra-api.service';
   styleUrls: ['./book.component.scss']
 })
 export class BookComponent implements OnInit {
-
   constructor() { }
-
   book : IBook;
-
   ngOnInit() {
   }
 }

@@ -13,7 +13,7 @@ export function configureRouting(app: express.Application, booksController: Book
     app.get('/books/:isbn', (req, res) => {
         let isbn = req.params.isbn;
         console.log(`get book ${isbn}`);
-        res.json(booksController.getBookByISBN(isbn))
+        res.json(booksController.getBookByISBN(isbn));
     });
     app.post('/books', (req, res) => {
         let isbn = req.body.isbn;
