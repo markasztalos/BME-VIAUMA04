@@ -57,5 +57,16 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
     * Routing
     * Dependency injection
     * `HttpClient`
+1. [Dependency injection](5/ea5.md)
+1. [Haladó Angular](6/ea6.md):
+    * Angular HTML sablonok: 
+        * adatkötés (1 és 2 irányú) (`()`, `[]`, `[()]`)
+        * eseménykezelés
+        * @Input binding
+        * @Output binding
+        * ngModel
+    * Direktívák
+
+
         
         
