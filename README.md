@@ -8,6 +8,7 @@ Megjegyzések:
  * A jegyzetek és diák [markdown](https://en.wikipedia.org/wiki/Markdown) formátumban készültek. Ez egy nagyon egyszerű szintaktika, amit könnyen lehet HTML-re fordítani. Ezt automatikusan megteszi a github, amikor egy fájlt (például ezt a `README.md`-t) nézegetünk. 
  * A diákat is markdown formátumban írtam meg, így is lehet ezeket olvasni. Amennyiben az órán használt diavetítés formában szeretnénk nézegeti ezeket, töltsük le a repository tartalmaát és az md fájlok mellett látható `.html` fájlokat futtassuk. 
 
+## Tartalomjegyzék
 A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéletek:
 1. [Bevezetés a web alapú technológiákba](1/ea1.md). Fontosabb témakörök és fogalmak:
     * HTML, XML
@@ -72,7 +73,8 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
     * Desktop környzetek fejlesztése JavaScript nyelvhez (Electron)
 
 
-Vizsga témakörei: 
+## Vizsga témakörei
+
  * HTML: 
     * szintaxis, összevetése az XML-lel, minimális HTML fájl felépítése, fontosabb tagek (`html, head, body, div, span, a, img`)
     * űrlapok: `form, input, button` és működésük
