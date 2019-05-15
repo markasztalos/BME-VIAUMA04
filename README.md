@@ -104,7 +104,7 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
     * **dekorátorok fogalma**, megvalósításuk osztályokon, függvényeken, dekorátor factory-k segítségével
     * TypeScript projekt kezelés: `tsconfig.json` szerepe
  * Angular:
-    * **SPA (Single Page Application) fogalma. Mire jó az Angular? Hogyan történik egy angular alkalmazás futtatása a böngészőben? **
+    * **SPA (Single Page Application) fogalma. Mire jó az Angular? Hogyan történik egy angular alkalmazás futtatása a böngészőben?**
     * Alapfogalmak: modul, komponens, szolgáltatás (*service*)
     * **Szogáltatások: Hogyan férünk hozzájuk? Ki példányosítja ezeket? Miért jó, hogy az angular keretrendszer kezeli az életciklusukat? Hogyan történik egy szolgáltatás regisztrálása?**(`@Injectable` dekorátor és regisztrálás a modulban)?
     * Komponensek:
