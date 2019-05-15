@@ -200,7 +200,7 @@ class Component {
 * Értéke az `isButtonDisabled` értéke (`false`, vagy `true`)
 
 ---
-# Property binding
+# Property binding 2
 ```ts
 @Component({
     selector: 'book',
@@ -224,7 +224,7 @@ class BookComponent {
 ```
 
 ---
-# Property binding 2
+# Property binding 3
 ```ts
 class Component {
     book : {
@@ -243,7 +243,7 @@ class Component {
 ```
 ---
 
-# Property binding 3
+# Property binding 4
 
 `[]` (box-binding):
  * Egyirányú adatkötés: az idézőjelben megadott kifejezés kiértékelődik, az eredménye átadódik

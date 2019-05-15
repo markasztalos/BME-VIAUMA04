@@ -75,6 +75,11 @@ localStorage.setItem("user", JSON.stringify(userData));
 let userData2 = JSON.parse(localStorage.getItem("user"));
 ```
 
+--- 
+# Adattárolás - további lehetőségek
+
+![](f12app.png)
+
 ---
 
 # Platformok
