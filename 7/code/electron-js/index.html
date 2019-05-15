@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Számológép</title>
+    </head>
+    <body>
+        <script>
+            function calculate() {
+                let x = parseInt(document.getElementById("x").value);
+                let y = parseInt(document.getElementById("y").value);
+                let sum = x + y;
+                document.getElementById("sum").value = sum;
+            }
+        </script>
+        <style>
+            .my-number {
+                width: 50px;
+                margin:4px;
+            }
+        </style>
+        <div>
+            <h1>Számológép</h1>
+            <form>
+                <input type="number" id="x" class="my-number" > + 
+                <input type="number" id="y" class="my-number"> 
+                <button onclick="calculate(); return false;">=</button>
+                <input type="number" id="sum" class="my-number" readonly />
+            </form>
+        </div>
+    </body>
+</html>

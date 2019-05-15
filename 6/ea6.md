@@ -36,7 +36,7 @@ export class Component {
 ```html
 <h1>{{title}}<h1>
 <span data="{{value + 1}}"></span>
-<span>complex?.value</span> <!-- safe navigation operator -->
+<span>{{complex?.value}}</span> <!-- safe navigation operator -->
 {{1 + 1 + 2}}
 ```
 
@@ -74,8 +74,8 @@ export class Component {
 ```
 
 ```html
-<ul *ngFor="let item of items">
-    <li>{{item.name}} ({{item.value}})</li>
+<ul>
+    <li *ngFor="let item of items">{{item.name}} ({{item.value}})</li>
 <ul>
 ```
 
@@ -290,7 +290,7 @@ class CounterComponent {
 ```ts
 class Component {
     counterValue: number;
-    onCounterChanged(newValue) {
+    onCounterChanged(newValue : number) {
         this.counterValue = newValue;
     }
 }
@@ -359,7 +359,8 @@ class Component {
 Ekvivalens ezzel: 
 
 ```html
-<counter [counter]="counterValue" (counterChange)="counterValue = $event"></counter>
+<counter [counter]="counterValue" (counterChange)="counterValue = $event">
+</counter>
 ```
 
 ---
