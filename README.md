@@ -114,8 +114,8 @@ A web alapú multiplatform fejlesztéshez tartozó előadásanyagok és segdéle
         * **`@Input()` és `@Output()` dekorátorok, események publikálása (`EventEmitter` típus), kétirányú adatkötés (`[()]`)**
         * **Komponens életciklusa: mikor és miért generáljuk újra a HTML tartalmat? **
     * Direktíva fogalma
-    * **Routing fogalma Angularban: böngészőben megadott *path* alapján eldöntjük, hogy melyik **komponenst töltsük be. 
- * **Függőséginjektálás fogalma **(*Depedency Injection - DI*)
+    * **Routing fogalma Angularban: böngészőben megadott *path* alapján eldöntjük, hogy melyik komponenst töltsük be.** 
+ * **Függőséginjektálás fogalma** (*Depedency Injection - DI*)
  * **Adattárolási lehetőséget böngészőben** (sütik, `localStorage`, `sessionStorage`)
  * Desktop környzetek fejlesztése JavaScript nyelvhez (**`Electron`**)
     
