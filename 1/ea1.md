@@ -19,7 +19,7 @@ dokumentumok ma már nem csak statikus tartalmak és a webszerver feladata sem k
 annyi, hogy felolvas egy HTML dokumentumot vagy képfájlt és azt visszaadja. Egy összetett
 webalkalmazás esetén is egy URL-en keresztül fordulunk egy webszerverhez. A webszerver azonban
 dinamikusan is előállíthatja a kért választ a böngészőnek. Ez azt jelenti, hogy a webszerveren a kérés
-hatására lefut egy program, amely a bejövő paraméterek (például honnak küldték a kérést, milyen
+hatására lefut egy program, amely a bejövő paraméterek (például honnan küldték a kérést, milyen
 felhasználó küldte stb.) függvényében más és más kimenetet állít elő.  
 
 
@@ -74,7 +74,7 @@ egy funkciót, amellyel a böngészőből kimenő és a bejövő üzeneteket leh
 A HTTP kérések specifikálják, hogy a megcímzett erőforráson milyen műveletet akarunk végrehajtani.
 A következő táblázatban láthatók az egyes metódusok és az általuk megcímzett műveletek.
 
-* *A GET kéréssel le tudunk kérni egy erőforrást a szerverről. A válasz tartalmazza a
+* A GET kéréssel le tudunk kérni egy erőforrást a szerverről. A válasz tartalmazza a
 megcímzett erőforrást, miközben a kérés nem változtatja meg a szerver állapotát, azaz
 a kérés kiszolgálásának nincsen mellékhatása.
 * A HEAD kérés hasonló a GET-hez, azzal a különbséggel, hogy a szerver válaszában nem
@@ -82,7 +82,7 @@ szerepel semmi az üzenet törzsében, vagyis csak a GET-re adandó válasszal a
 üzenet címsorát és fejléc részét küldi el.
 * POST üzenet segítségével tudunk új tartalmat küldeni a szervernek.
 * A PUT üzenet segítségével egy erőforrást tudunk újjal helyettesíteni, vagyis frissíteni.
-DELETE A DELETE üzenettel tudunk erőforrást törölni. 
+* A DELETE üzenettel tudunk erőforrást törölni. 
 
 A világháló működése során a böngészők nem teljes mértékben az eredeti koncepció szerint használják
 a HTTP metódusokat. Ugyanis az erőforrások ebben az esetben a HTML dokumentumok, amiket nem
@@ -121,7 +121,7 @@ aláhúzás: dőlt, kettős aláhúzás: félkövér betű), itt a nagy újdons�
 címkekészlet megalkotása volt, így jött létre a HTML mint jelölőnyelv (markup language).
 * A dokumentumok „mutassanak túl” önmagukon, azaz olyan hiperszövegeket (hypertext)
 tartalmazzanak, amelyek egy másik dokumentum bármely részletére hivatkozhatnak. Ez az,
-amit ma úgy ismerünk, hogy egy weboldalon r
+amit ma úgy ismerünk, hogy egy weboldalról linkek segítségével navigálhatunk más weboldalakra.
 
 ### XML
 
@@ -150,7 +150,7 @@ De ez helytelen:
     </tag2> 
 ```
 Az elemek opcionálisan rendelkezhetnek attribútumokkal, ahogyan az első kódrészlet mutatja. Az atribútumok értékét idézőjelek között adjuk meg. 
-Amennyiben egy tag nem rendelkezik belső tartalommal, akkor a nyitó és a záróelemet egyetlen tagként is le lehet írni: 
+Amennyiben egy tag nem rendelkezik belső tartalommal, akkor a nyitó- és a záróelemet egyetlen tagként is le lehet írni: 
 ```xml
 <tag attribútum="érték" />
 ```
@@ -230,7 +230,7 @@ A bekezdések közé címsorokat tehetünk, méghozzá hat méretben, melyeket a
 elemekkel jelölhetünk.
 
 ##### Képek
-Képeket az `img` elemmel lehet megjeleníteni. Az `img` elem önbezáró címkével is leírható, mert a nyitó
+Képeket az `img` elemmel lehet megjeleníteni. Az `img` elem önbezáró címkével is leírható, mert a nyitó-
 és a záró-tag közé nem írunk szöveget. Legfontosabb attribútumai a következők:
  * `src`: ebben az attribútumban adjuk meg a hivatkozott kép URL-jét. Abszolút és relatív elérési
 útvonalat is megadhatunk. Abszolút elérési útvonal esetén a cím egy teljes URL a korábban
@@ -498,13 +498,13 @@ A HTML dokumentumok elemei tehát meghatározzák az egyes elemek jelentését. 
 
 Az egyes elemeknek megfelelő tartalmat rajzolják ki a böngészők. Például az `img` tag esetén egy képet, amelynek címét a tag `src` attribútumában adjuk meg. Egy egyszerű szöveg esetén megjelenik az adott szöveg a megfelelő betűtípussal. 
 
-A megjelenítésnél az ún. box modellt alkalmazzuk. Ennek lényege, hogy minden megjelenített tartalom egy téglalapba foglalható be. A téglalap teljes mérete a tényleges tartom körül belső margóból (`padding`), az akörüli keretből (`border`) és az akörüli külső margóból (`margin`) tevődik össze. Például, ha egy szöveg 120 pixel széles, nincs körülötte margó, de 2 pixel széles keretet rajzolunk köré, akkor a teljes szélessége 122 pixel lesz. 
+A megjelenítésnél az ún. box modellt alkalmazzuk. Ennek lényege, hogy minden megjelenített tartalom egy téglalapba foglalható be. A téglalap teljes mérete a tényleges tartalom körül belső margóból (`padding`), az akörüli keretből (`border`) és az akörüli külső margóból (`margin`) tevődik össze. Például, ha egy szöveg 120 pixel széles, nincs körülötte margó, de 2 pixel széles keretet rajzolunk köré, akkor a teljes szélessége 122 pixel lesz. 
 A legtöbb böngésző tartalmaz ún. *develop toolbar*-t, amelyet F12 segítéségvel előhívhatunk. Itt áttekinthetjük az aktuálisan megjelenített HTML dokumentum tartalmát és a megfelelő elemet kiválasztva, az ahhoz tartozó box modellt is. 
 ![box modell](boxmodel.png)
 
 ### Cascading Style Sheets
 
-A HTML fájlban az egyes szöveges tartalmakat jelölőkkel látjuk át, amellyel meghatározzuk az oldal
+A HTML fájlban az egyes szöveges tartalmakat jelölőkkel látjuk el, amellyel meghatározzuk az oldal
 szerkezetét (például mely szövegek lesznek címsorok). A szerkezet mellett a HTML dokumentumok a
 megjelenítés stílusát is megszabhatják (milyen betűtípust használunk, milyen háttérszínt alkalmazunk
 stb.). A tartalom és a stílus elválasztásának érdekében a stílusbeállításokat külön fájlokba, ún.
@@ -593,7 +593,7 @@ többszörösen növelik az oldal méretét, és nekünk kell szinkronban tartan
 Egy másik lehetőség a CSS kód elhelyezésére a stílus blokk használata. Ebben az esetben létrehozunk
 az oldalon egy `style` elemet, és oda írjuk a CSS kódunkat. A `style` elemet tipikusan a `head` elemen
 belülre tesszük, de ez nem kötelező. A `style` elem `type` attribútumában adjuk meg a *text/css*
-értéket, hogy a böngésző biztosan tudja, hogy egy CSS stílusokat definiálunk.
+értéket, hogy a böngésző biztosan tudja, hogy CSS stílusokat definiálunk.
 A stílusblokkon belül különböző stíluscsoportokat hozhatunk létre, amelyeket nyitó és záró kapcsos
 zárójelek közé írunk.
 
@@ -625,7 +625,7 @@ body
 ```
 
 Fontos tudni, hogy a CSS stílusok a legtöbb elemen keresztül öröklődnek, ahogyan az egyes elemeket
-egymásba ágyazzuk. A fenti példában csak a `body` elem hátterét állítottuk meg, de a body tartalmazza
+egymásba ágyazzuk. A fenti példában csak a `body` elem hátterét állítottuk be, de a body tartalmazza
 az összes megjelenített tartalmat. Ezek háttere szintén a fenti szín lesz. Természetesen a leszármazott elemekben is specifikusan beállíthatjuk a háttérszínt, ilyenkor ez a beállítás felülírja az alapértelmezett
 öröklött értéket. 
 
@@ -646,6 +646,7 @@ oldalhoz tartozó stíluslapra. Ennek szintaktikája az alábbi:
 Ez a legpraktikusabb megoldás, hiszen ilyenkor a teljes webhelyünkhöz tartozó összes stílusbeállítás
 egyetlen (vagy néhány) fájlban található, erre hivatkozik az összes oldal, így ha módosítani kell valamit,
 akkor azt elég egyetlen helyen megtenni.
+
 Jogosan teheti fel bárki a kérdést, hogy mi van akkor, ha mind a három megoldást egyszerre
 használom? Ebben az esetben a böngésző alkalmazni fogja az összes stílusbeállítást, mégpedig a
 következő sorrendben, az általánostól a specifikusabb irányba haladva:
