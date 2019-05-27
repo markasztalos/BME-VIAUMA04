@@ -511,7 +511,7 @@ user.greet();
 
 ## Getterek és setterek
 
-A modern JavaScriptben lehetőség van getter és setter függvény definiálására. Ezek a háttérben függvényekként működnek, de úgy értetők el, mint egyszerű propertyk. A property olvasásakor a getter fut le és adja vissza az értéket, írásakor pedig a setter. 
+A modern JavaScriptben lehetőség van getter és setter függvény definiálására. Ezek a háttérben függvényekként működnek, de úgy érhetők el, mint egyszerű propertyk. A property olvasásakor a getter fut le és adja vissza az értéket, írásakor pedig a setter. 
 
 ```js
 let user = {
