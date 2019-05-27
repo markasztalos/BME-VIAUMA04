@@ -380,7 +380,7 @@ throw new Error();
 Az objektumban lehetőség van tetszőleges kulcs-érték párok tárolására. Azonban gyakran fontos a kulcsok sorrendje is. Ekkor használjuk a tömböket, amelyek speciális objektumok. A tömböket egyszerű számokkal is indexelhetjük, nem kötekező azonos típusú adaokat tárolniuk, és `[]` jelekkel röviden leírhatók. 
 ```js
 let a = ['alma', "körte"];
-et a2 = new Array();
+let a2 = new Array();
 a.push("dió"); // új elem hozzáadása
 let x = a[0]; //alma
 let y = a.length; //3
